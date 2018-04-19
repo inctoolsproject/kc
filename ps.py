@@ -14,12 +14,11 @@ cl.loginResult()
 
 
 
-print "SELFBOT PRANKBOTS\nSUCCES LOGIN\nSELAMAT MENGGUNAKANYA KAWAN"
+print "SUCCES LOGIN\nSELAMAT MENGGUNAKANYA KAWAN"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage="""(╣••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
-          『B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́』
+helpMessage="""(╣••в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
   ✰ Me
   ✰ Add
   ✰ Cn "text"
