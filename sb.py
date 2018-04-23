@@ -107,11 +107,9 @@ helpMessage="""(╣••в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╣)
   ★ Prolink:on/off
   ★ Proinvite:on/off
   ★ Procancel:on/off
-     『B༘̈́̈́L༘̈́̈́Ä༘́̈́C༘̈́̈́K༘̈́̈́   ̈́Ö༘́̈́F༘̈́̈́ ̈́  G༘̈́̈́Ä༘́̈́M༘̈́̈́Ë༘́̈́R༘̈́̈́』
-(╚••℘̰̰̈́ґ̰̰̈́∂̰̰̈́η̰̰̈́к̰̰̈́ ̰в̰̰̈́❍̰̰̈́т̰̰̈́ѕ̰̰̈́••╝)
+  
 """
-helo="""SILAHKAN GUNAKAN BOT NYA .JIKA KAMU MAU TAMBAHIN ATAU EDIT LAGI SCRIPT NYA SILAHKN
-TAPI TOLONG HARGAI SAYA UNTUK TIDAK MERUBAH LEBEL PRANKBOTS DAN AUTO ADD ATAU AUTO LIKE TERIMAKASIH :D"""
+helo="""HITAM :D"""
 
 KAC=[cl]
 mid = cl.getProfile().mid
@@ -132,28 +130,14 @@ wait = {
     'timeline':False,
     'autoAdd':True,
     'message':""" 💥🔥【тнanĸѕ ғor add мe】🔥💥
-                              😎
-                         🖕🏻👕👊🏻
-                              👖
-                              👢
-          💥🔥AUTO ADD FRIEND🔥💥
-
-  ❂•••••••SPONSOR•••••••❂
-         https://line.me/R/ti/p/%40iya4481p
-   ☆★☆★☆★☆★☆★☆★☆
-        http://line.me/ti/p/~@sml1492z
-
- ❂•••••••COSTUMER•••••••❂
-         http://line.me/ti/p/~@gnh2780p
+    
 """,
     "lang":"JP",
     "comment1":"""{AUTO LIKE BY}
-         https://line.me/R/ti/p/%40iya4481p
-   ☆★☆★☆★☆★☆★☆★☆
-        http://line.me/ti/p/~@sml1492z
+         https://line.me/R/ti/p/
 
- ❂•••••••COSTUMER•••••••❂
-         http://line.me/ti/p/~@gnh2780p
+ ❂•••••••ME•••••••❂
+         http://line.me/ti/p/~
 """,
     "commentOn":False,
     "likeOn":True,
@@ -462,7 +446,7 @@ def bot(op):
                     group.name = msg.text.replace("Gn:","")
                     ki.updateGroup(group)
                 else:
-                    cl.sendText(msg.to,"Hal ini tidak dapat digunakan di luar kelompok👈")
+                    cl.sendText(msg.to,"Hal ini tidak dapat digunakan di luar Grup👈")
             elif ("Gn " in msg.text):
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
@@ -526,7 +510,7 @@ def bot(op):
                 ki6.sendMessage(msg)
             elif "Creator" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'u84734a2bb2201d465e6015f90dc462f0'}
+                msg.contentMetadata = {'mid': ''}
                 cl.sendMessage(msg)
             elif msg.text in ["Allgift","B1 gift"]:
                 msg.contentType = 9
@@ -777,7 +761,7 @@ def bot(op):
                     cl.sendText(msg.to,"Not for use less than group")
             elif "Creator" == msg.text:
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'ufce863f62f40706c01fa4a3c3c4cb096'}
+                msg.contentMetadata = {'mid': ''}
                 cl.sendMessage(msg)
             elif "Mymid" == msg.text:
                 cl.sendText(msg.to,mid)
@@ -1337,7 +1321,7 @@ def bot(op):
                 else:md+="✫ Proinvite:off  ✖\n"
                 if wait["cancelprotect"] == True: md+"✫ Procancel:on  ✔\n"
                 else:md+="✫ Procancel:off  ✖\n"
-                cl.sendText(msg.to,md + "\n\n{==℘ґ∂ηк в❍тѕ==}")
+                cl.sendText(msg.to,md + "\n\n{==HITAM в❍тѕ==}")
 #                msg.contentType = 13
 #                msg.contentMetadata = {'mid': admsa}
 #                cl.sendMessage(msg)
@@ -1360,11 +1344,11 @@ def bot(op):
                     cl.sendText(msg.to,"old user")
             elif cms(msg.text,["Add"]):
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'u5818cb4404411c2e2e6e6937d172cca8'}
+                msg.contentMetadata = {'mid': ''}
                 cl.sendText(msg.to,"❂•••••••••✧••••••••••❂")
                 cl.sendMessage(msg)
                 msg.contentType = 13
-                msg.contentMetadata = {'mid': 'udfaf52176415b46cb445ae2757ec85f3'}
+                msg.contentMetadata = {'mid': ''}
                 cl.sendMessage(msg)
                 cl.sendText(msg.to,"❂••••••••✰•✰••••••••❂")
             elif "Set album:" in msg.text:
@@ -1413,9 +1397,9 @@ def bot(op):
                         cl.deleteAlbum(gid,album["gid"])
                         i += 1
                 if wait["lang"] == "JP":
-                    cl.sendText(msg.to,str(i) + "Soal album telah dihapus")
+                    cl.sendText(msg.to,str(i) + "album telah dihapus")
                 else:
-                    cl.sendText(msg.to,str(i) + "Hapus kesulitan album🛡")
+                    cl.sendText(msg.to,str(i) + "kesulitan Hapus album🛡")
             elif msg.text.lower() == 'group id':
                 gid = cl.getGroupIdsJoined()
                 h = "❂•••••••L I S T  I D  G R O U P•••••••❂\n "
@@ -1438,7 +1422,7 @@ def bot(op):
           #          ki5.leaveGroup(i)
                #     ki6.leaveGroup(i)
                 if wait["lang"] == "JP":
-                    cl.sendText(msg.to,"Kitsune Bot Sudah Keluar Di semua grup")
+                    cl.sendText(msg.to,"Bot Sudah Keluar Di semua grup")
                 else:
                     cl.sendText(msg.to,"He declined all invitations")
             elif msg.text in ["Gcancelall"]:
